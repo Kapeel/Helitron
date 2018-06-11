@@ -80,7 +80,7 @@ wget http://maizetedb.org/~maize/TE_12-Feb-2015_15-35.fa
 $VSEARCH --usearch_global TE_12-Feb-2015_15-35.fa -db ${GENOME}.HelitronScanner.tabnames.fa -id 0.8 -query_cov 0.8 -target_cov 0.8 -blast6out ${GENOME}.TEDB.8080.searchglobal.toponly.out -strand both -top_hits_only --threads $CPU
 
 # generate helitron gff3
-Rscript /maize_v4_TE_annotation/helitron/generate_Helitron_gff.R ${GENOME}
+Rscript /Helitron/helitron_scripts/generate_Helitron_gff.R ${GENOME}
 
 mkdir Helitron_output
 mv ${GENOME}* Helitron_output

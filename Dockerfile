@@ -70,10 +70,11 @@ RUN wget http://sourceforge.net/projects/helitronscanner/files/HelitronScanner_V
 
 ##- Make TE repo
 
-RUN git clone -b helitron --single-branch https://github.com/Kapeel/maize_v4_TE_annotation.git
+#RUN git clone -b helitron --single-branch https://github.com/Kapeel/maize_v4_TE_annotation.git
 #RUN git clone https://github.com/mcstitzer/maize_v4_TE_annotation.git
+RUN git clone https://github.com/Kapeel/Helitron.git
 
 #WORKDIR /maize_v4_TE_annotation/helitron
-RUN cd /maize_v4_TE_annotation/helitron
+RUN cd /Helitron/helitron_scripts
 
-ENTRYPOINT ["sh", "/maize_v4_TE_annotation/helitron/run_helitron_scanner.sh"]
+ENTRYPOINT ["sh", "/Helitron/helitron_scripts/run_helitron_scanner.sh"]
