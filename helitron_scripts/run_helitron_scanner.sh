@@ -13,8 +13,8 @@ SILIX=silix
 VSEARCH=vsearch
 
 ### helitron scanner needs some memory to load each chromosome in, so remember that when picking a queue
-CPU=44
-MEMGB=120
+CPU=4
+MEMGB=8
 
 ###########################
 ##   DIRECT ORIENTATION  ##
