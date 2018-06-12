@@ -33,7 +33,8 @@ RUN wget ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.2.26/ncbi-blast-2
 RUN wget ftp://pbil.univ-lyon1.fr/pub/logiciel/silix/silix-1.2.11.tar.gz \
  && tar -xvf silix-1.2.11.tar.gz \
  && cd silix-1.2.11 \
- && ./configure --enable-mpi --enable-verbose \
+## && ./configure --enable-mpi --enable-verbose \
+ && ./configure \
  && make \
  && make check \
  && make install \
