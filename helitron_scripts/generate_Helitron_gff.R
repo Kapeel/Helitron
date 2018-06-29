@@ -4,11 +4,14 @@ library(data.table)
 library(plyr)
 
 
-GENOMENAME=commandArgs(trailingOnly=TRUE) ## this is what script expects, but hardcoding name is also fine.
+#GENOMENAME=commandArgs(trailingOnly=TRUE) ## this is what script expects, but hardcoding name is also fine.
 #GENOMENAME='B73V4.both_pseudo_AND_unplaced'
 #GENOMENAME=commandArgs(trailingOnly=TRUE)
-SHORTID='Zm00001d'
+#SHORTID='Zm00001d'
 
+args=commandArgs(trailingOnly=TRUE)
+GENOME=args[1]
+SHORTID=args[2]
 
 
 ######### Read in silix results
